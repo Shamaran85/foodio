@@ -1,32 +1,107 @@
-.App {
-  text-align: center;
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700&subset=latin-ext,latin);
+@import url(https://use.fontawesome.com/releases/v5.4.1/css/all.css);
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 1em;
+  line-height: 1.5;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  margin: 0px;
+  flex-wrap: nowrap;
+}
+
+.sidebar {
+  flex: 0 1 12%;
+  height: 100vh;
+  background-color: #444;
+}
+
+.sidebar .sidebar-logo {
+  color: #eee;
+  text-transform: uppercase;
+  padding: 25px;
+  font-size: 1.5em;
+}
+
+.sidebar .sidebar-navigation-title {
+  text-transform: uppercase;
+  background-color: #555;
+  color: #eee;
+  padding: 10px 25px;
+  font-size: 1.3em;
+  letter-spacing: 0.15em;
+  font-weight: 700;
+}
+
+.sidebar .sidebar-navigation a {
+  display: block;
+  text-decoration: none;
+  color: #a4a4a4;
+  padding: 10px 25px;
+  font-size: 1.2em;
+  
+}
+
+.sidebar .sidebar-navigation a path {
+  fill: #a4a4a4;
+  width: 20px;
+  height: auto;
+}
+
+/* a path {
+  fill: red;
+}
+
+a:hover path {
+  fill: green;
+} */
+
+.sidebar .sidebar-navigation a i {
+  padding-right: 10px;
+}
+
+.sidebar .sidebar-navigation a:hover {
+  color: #eee;
+}
+
+.content {
+  flex: 0 1 88%;
+  height: 100vh;
+  background-color: #fafafa;
 }
 
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+  width: 30px;
+  /* height: auto; */
+  fill: red;
+  color: red;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* a path {
+  fill: red;
 }
 
-.App-link {
-  color: #61dafb;
+a:hover path {
+  fill: green;
+} */
+
+.testTwo {
+  fill: red;
+  width: 32px;
+  height: auto;
+  /* background-color: green;
+  display: inline-block;
+  padding: 10px 0; */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+/* .sidebar .sidebar-navigation .navbar-item a {
+  display: inline-block;
+} */
