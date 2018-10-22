@@ -13,19 +13,39 @@ class App extends Component {
           </div>
           <div className="sidebar-navigation">
             <p className="sidebar-navigation-title">Pages</p>
-            <a href="#breakfast"><i class="fas fa-coffee"></i>Breakfast</a>
-            <a href="#lunch"><i class="fas fa-utensils"></i>Lunch</a>
-              <div className="navbar-item">
-              <span>
-                <SVGIcon name="breakfast" width="32px" className="testTwo" />
-                </span>
-              <a href="#dinner"> Dinner </a>
-              </div>
-              <a href="#desert"> Desert </a>
-              <a href="#smoothies"> Smoothies </a>
+            <ul>
+              <li>
+                <a href="#breakfast"><SVGIcon name="breakfast" />Breakfast</a>
+              </li>
+              <li>
+                <a href="#lunch"><SVGIcon name="breakfast" />Lunch</a>
+              </li>
+              <li>
+                <a href="#dinner"><SVGIcon name="dinner" />Dinner</a>
+              </li>
+              <li>
+                <a href="#desert"><SVGIcon name="desert" />Desert</a>
+              </li>
+              <li>
+                <a href="#smoothies"><SVGIcon name="smoothie" />Smoothies</a>
+              </li>
+            </ul>
 
-              <p className="sidebar-navigation-title">Settings</p>
+
+            {/* <a href="#breakfast"><i class="fas fa-coffee"></i>Breakfast</a>
+            <a href="#lunch"><i class="fas fa-utensils"></i>Lunch</a>
+            <div className="navbar-item">
+              <span>
+                <SVGIcon name="breakfast" />
+              </span>
+              <a href="#dinner"> Dinner </a>
+            </div>
+            <a href="#desert"> Desert </a>
+            <a href="#smoothies"> Smoothies </a> */}
+
+            <p className="sidebar-navigation-title">Settings</p>
           </div>
+
         </div>
         <div className="content">
           <p>Content</p>

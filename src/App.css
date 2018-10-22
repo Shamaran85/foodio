@@ -1,5 +1,4 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:400,700&subset=latin-ext,latin);
-@import url(https://use.fontawesome.com/releases/v5.4.1/css/all.css);
 body {
   font-family: 'Lato', sans-serif;
   font-size: 1em;
@@ -41,67 +40,44 @@ body {
   font-weight: 700;
 }
 
-.sidebar .sidebar-navigation a {
-  display: block;
-  text-decoration: none;
-  color: #a4a4a4;
-  padding: 10px 25px;
-  font-size: 1.2em;
-  
-}
-
-.sidebar .sidebar-navigation a path {
-  fill: #a4a4a4;
-  width: 20px;
-  height: auto;
-}
-
-/* a path {
-  fill: red;
-}
-
-a:hover path {
-  fill: green;
-} */
-
-.sidebar .sidebar-navigation a i {
-  padding-right: 10px;
-}
-
-.sidebar .sidebar-navigation a:hover {
-  color: #eee;
-}
-
 .content {
   flex: 0 1 88%;
   height: 100vh;
   background-color: #fafafa;
 }
 
-.App-logo {
-  width: 30px;
-  /* height: auto; */
-  fill: red;
-  color: red;
+/* ###### Sidebar Navigation ###### */
+
+.sidebar ul {
+  list-style-type: none;
+  margin: 0;
+  /* padding: 0; */
+  padding: 10px 25px;
 }
 
-/* a path {
-  fill: red;
-}
-
-a:hover path {
-  fill: green;
-} */
-
-.testTwo {
-  fill: red;
-  width: 32px;
-  height: auto;
-  /* background-color: green;
+.sidebar ul li {
   display: inline-block;
-  padding: 10px 0; */
+  /* padding: 10px 25px; */
+  font-size: 1.2em;
+  padding: 10px 0;
 }
 
-/* .sidebar .sidebar-navigation .navbar-item a {
-  display: inline-block;
-} */
+.sidebar ul li a {
+  display: flex;
+  text-decoration: none;
+  color: #a4a4a4;
+  transition: 200ms ease;
+}
+
+.sidebar ul li a svg {
+  fill: #a4a4a4;
+  width: 20px;
+  height: 20px;
+  padding: 4px 8px 0 0;
+  transition: 200ms ease;
+}
+
+.sidebar ul li:hover svg, .sidebar ul li:hover a {
+  color: #eee;
+  fill: #eee;
+}
