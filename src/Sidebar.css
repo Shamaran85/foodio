@@ -1,0 +1,16 @@
+.sidebar__logo {
+    color: #eee;
+    text-transform: uppercase;
+    padding: 25px;
+    font-size: 1.5em;
+}
+
+.sidebar__navigation__header {
+    text-transform: uppercase;
+    background-color: #555;
+    color: #eee;
+    padding: 10px 25px;
+    font-size: 1.3em;
+    letter-spacing: 0.15em;
+    font-weight: 700;
+}

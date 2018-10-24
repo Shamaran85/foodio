@@ -6,78 +6,23 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  height: 100%;
 }
 
-.container {
-  display: flex;
-  flex-direction: row;
-  height: 100vh;
-  margin: 0px;
-  flex-wrap: nowrap;
-}
+/* ########## CSS Grids ########## */
 
 .sidebar {
-  flex: 0 1 12%;
-  height: 100vh;
+  grid-area: sidebar;
   background-color: #444;
 }
 
-.sidebar .sidebar-logo {
-  color: #eee;
-  text-transform: uppercase;
-  padding: 25px;
-  font-size: 1.5em;
-}
-
-.sidebar .sidebar-navigation-title {
-  text-transform: uppercase;
-  background-color: #555;
-  color: #eee;
-  padding: 10px 25px;
-  font-size: 1.3em;
-  letter-spacing: 0.15em;
-  font-weight: 700;
-}
-
-.content {
-  flex: 0 1 88%;
-  height: 100vh;
+.main {
+  grid-area: main;
   background-color: #fafafa;
 }
 
-/* ###### Sidebar Navigation ###### */
-
-.sidebar ul {
-  list-style-type: none;
-  margin: 0;
-  /* padding: 0; */
-  padding: 10px 25px;
-}
-
-.sidebar ul li {
-  display: inline-block;
-  /* padding: 10px 25px; */
-  font-size: 1.2em;
-  padding: 10px 0;
-}
-
-.sidebar ul li a {
-  display: flex;
-  text-decoration: none;
-  color: #a4a4a4;
-  transition: 200ms ease;
-}
-
-.sidebar ul li a svg {
-  fill: #a4a4a4;
-  width: 20px;
-  height: 20px;
-  padding: 4px 8px 0 0;
-  transition: 200ms ease;
-}
-
-.sidebar ul li:hover svg, .sidebar ul li:hover a {
-  color: #eee;
-  fill: #eee;
+.container {
+  display: grid;
+  grid-template-columns: 1fr 7fr;
+  grid-template-rows: 100vh;
+  grid-template-areas: 'sidebar main';
 }
