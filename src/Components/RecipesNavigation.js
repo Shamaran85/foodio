@@ -4,15 +4,9 @@ import "./Navigation.css";
 
 import SVGIcon from "../SVGIcon";
 
-const Navigation = () => {
+const RecipesNavigation = () => {
   return (
     <ul className="sidebar__navigation__ul">
-      <li className="sidebar__navigation__ul__li">
-        {" "}
-        <NavLink exact to="/" activeClassName="active">
-          Home
-        </NavLink>{" "}
-      </li>
       <li className="sidebar__navigation__ul__li">
         <NavLink to="/breakfast" activeClassName="active">
           <SVGIcon name="breakfast" />
@@ -21,7 +15,7 @@ const Navigation = () => {
       </li>
       <li className="sidebar__navigation__ul__li">
         <NavLink to="/lunch" activeClassName="active">
-          <SVGIcon name="breakfast" />
+          <SVGIcon name="lunch" />
           Lunch
         </NavLink>
       </li>
@@ -47,4 +41,4 @@ const Navigation = () => {
   );
 };
 
-export default Navigation;
+export default RecipesNavigation;

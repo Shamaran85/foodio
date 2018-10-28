@@ -5,12 +5,17 @@
     font-size: 1.5em;
 }
 
-.sidebar__navigation__header {
+.sidebar__navigation__settings__header, .sidebar__navigation__recipes__header {
     text-transform: uppercase;
     background-color: #555;
     color: #eee;
     padding: 10px 25px;
-    font-size: 1.3em;
+    font-size: 1.1em;
     letter-spacing: 0.15em;
     font-weight: 700;
+    margin: 10px 0;
+}
+
+.sidebar__navigation__recipes__header {
+    margin-top: 30px;
 }

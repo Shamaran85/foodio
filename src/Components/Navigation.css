@@ -6,7 +6,7 @@
 
 .sidebar__navigation__ul__li {
     display: block;
-    font-size: 1.2em;
+    font-size: 1.15em;
     padding: 10px 0;
 }
 
@@ -20,8 +20,8 @@
 .sidebar__navigation__ul__li a svg {
     fill: #a4a4a4;
     stroke: #eee;
-    width: 22px;
-    height: 22px;
+    width: 24px;
+    height: 24px;
     padding: 4px 8px 0 0;
     transition: 150ms ease;
     vertical-align: -3px;

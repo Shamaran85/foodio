@@ -22,7 +22,7 @@ body {
 
 .container {
   display: grid;
-  grid-template-columns: 1fr 7fr;
+  grid-template-columns: 220px 1fr;
   grid-template-rows: 100vh;
   grid-template-areas: 'sidebar main';
 }
